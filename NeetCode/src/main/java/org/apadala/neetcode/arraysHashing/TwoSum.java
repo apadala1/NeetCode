@@ -24,7 +24,7 @@ public class TwoSum {
 	/**
 	 * Subtract target with each number , if exists in map return result, if not put
 	 * the number and index of number into Map
-	 * 
+	 * Non duplicates
 	 * 
 	 * @param nums
 	 * @param target

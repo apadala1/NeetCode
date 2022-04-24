@@ -1,7 +1,12 @@
 package org.apadala.neetcode.arrays.test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.apadala.neetcode.arraysHashing.Anagram;
 import org.apadala.neetcode.arraysHashing.ContainsDuplicate;
+import org.apadala.neetcode.arraysHashing.GroupAnagrams;
 import org.apadala.neetcode.arraysHashing.TwoSum;
 import org.junit.Assert;
 import org.junit.Test;
@@ -34,5 +39,17 @@ public class ArraysHashingTests {
 		Assert.assertArrayEquals(new int[] { 0, 1 }, sum.twoSum(new int[] { 2, 7, 11, 15 }, 9));
 		Assert.assertArrayEquals(new int[] { 1, 2 }, sum.twoSum(new int[] { 3, 2, 4 }, 6));
 		Assert.assertArrayEquals(new int[] { 0, 1 }, sum.twoSum(new int[] { 3, 3 }, 6));
+	}
+
+	@Test
+	public void groupAnagramTest() {
+
+		GroupAnagrams cmd = new GroupAnagrams();
+		List<List<String>> result = new ArrayList<>();
+		result.add(Arrays.asList("bat"));
+		result.add(Arrays.asList("nat", "tan"));
+		result.add(Arrays.asList("ate", "eat", "tea"));
+		//Assert.assertArrayEquals(result.toArray(), cmd.groupAnagrams("eat","tea","tan","ate","nat","bat").toArray());
+
 	}
 }
