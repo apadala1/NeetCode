@@ -40,7 +40,7 @@ public class SmallestSubArrayWithSum {
 	}
 
 	public static void main(String[] args) {
-		int[] input = { 2, 1, 5, 2, 3, 2 };
+		int[] input = { 2, 1, 5, 2, 3, 5 };
 		int sum = 7;
 
 		System.out.println(SmallestSubArrayWithSum.solution1(input, sum));
