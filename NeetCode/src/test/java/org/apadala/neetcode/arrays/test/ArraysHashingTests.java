@@ -49,7 +49,7 @@ public class ArraysHashingTests {
 		result.add(Arrays.asList("bat"));
 		result.add(Arrays.asList("nat", "tan"));
 		result.add(Arrays.asList("ate", "eat", "tea"));
-		//Assert.assertArrayEquals(result.toArray(), cmd.groupAnagrams("eat","tea","tan","ate","nat","bat").toArray());
+		Assert.assertArrayEquals(result.toArray(), cmd.groupAnagrams("eat","tea","tan","ate","nat","bat").toArray());
 
 	}
 }
